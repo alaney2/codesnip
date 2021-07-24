@@ -1,6 +1,8 @@
-function Pricing() {
-  return <div>
+import Navbar from "../components/Navbar";
 
+function Pricing() {
+  return <div className="bg">
+    <Navbar />
   </div>;
 }
 

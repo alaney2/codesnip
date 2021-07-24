@@ -1,6 +1,8 @@
-function Contact() {
-  return <div>
+import Navbar from "../components/Navbar";
 
+function Contact() {
+  return <div className="bg">
+    <Navbar />
   </div>;
 }
 

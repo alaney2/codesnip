@@ -1,6 +1,8 @@
-function GetStarted() {
-  return <div>
+import Navbar from "../components/Navbar";
 
+function GetStarted() {
+  return <div className="bg">
+    <Navbar />
   </div>;
 }
 
