@@ -14,12 +14,27 @@ export default function Home() {
 
     <Navbar />
 
-    <main className="text-center justify-center">
-      <h1 className="hero">asdfasd</h1>
+    <main className="text-center justify-center space-y-64">
+      <h1 className="hero">Demo here</h1>
       {/* <h1 className="text-2xl my-8">
         Coding done right.
       </h1> */}
       <h2>A coding environment for your students.</h2>
+      <p>CodeSnip is designed with educators in mind.</p>
+      <p>CodeSnip is designed with educators in mind.</p>
+      <p>CodeSnip is designed with educators in mind.</p>
+      <p>CodeSnip is designed with educators in mind.</p>
+      <p>CodeSnip is designed with educators in mind.</p>
+      <p>CodeSnip is designed with educators in mind.</p>
+      <p>CodeSnip is designed with educators in mind.</p>
+      <p>CodeSnip is designed with educators in mind.</p>
+      <p>CodeSnip is designed with educators in mind.</p>
+      <p>CodeSnip is designed with educators in mind.</p>
+      <p>CodeSnip is designed with educators in mind.</p>
+      <p>CodeSnip is designed with educators in mind.</p>
+      <p>CodeSnip is designed with educators in mind.</p>
+      <p>CodeSnip is designed with educators in mind.</p>
+      <p>CodeSnip is designed with educators in mind.</p>
       <p>CodeSnip is designed with educators in mind.</p>
 
     </main>

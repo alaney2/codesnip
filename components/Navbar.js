@@ -45,8 +45,8 @@ function Navbar() {
     window.addEventListener('scroll', scrollValue);
   }, []);
 
-  return <nav className="outline-black">
-    <div className="max-w-4xl mx-auto px-4">
+  return <nav className="fixed w-screen" id="navbar">
+    <div className="max-w-6xl mx-auto px-4">
       <div className="flex justify-between">
         <div className="flex space-x-4">
           {/* logo */}
