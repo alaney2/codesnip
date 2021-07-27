@@ -15,6 +15,7 @@ export default function Home() {
     <Navbar />
 
     <main className="text-center justify-center">
+      <h1 className="hero">asdfasd</h1>
       {/* <h1 className="text-2xl my-8">
         Coding done right.
       </h1> */}

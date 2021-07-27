@@ -9,4 +9,24 @@
   .bg {
     @apply min-h-screen h-auto bg-almost-white dark:bg-almost-black
   }
+  .hero {
+    background: #999;
+    @media screen and (min-width: 1020px) {
+      min-height: 450px;
+      max-height: 900px;
+      height: 65vh;
+      margin-top: -50px;
+      padding-top: 50px;
+      z-index: 11;
+    }
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .bgColor {
+    color: black;
+    transition: all 1s;
+    background-color: white;
+    border-bottom: 1px solid lightgray;
+  }
 }

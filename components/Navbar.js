@@ -19,6 +19,8 @@ function Navbar() {
   //     <Link href="/portal">Portal</Link>
   //   </div>
   // </div>;
+
+  // Responsive menu
   useEffect(() => {
     const btn = document.querySelector("button.mobile-menu-button");
     const menu = document.querySelector(".mobile-menu");
@@ -26,7 +28,22 @@ function Navbar() {
     btn.addEventListener("click", () => {
       menu.classList.toggle("hidden");
     });
-  }, [])
+  }, []);
+
+  // Change header background when scrolling
+  useEffect(() => {
+    function scrollValue() {
+      var navbar = document.getElementById('navbar');
+      var scroll = window.scrollY;
+      if (scroll < 200) {
+        navbar.classList.remove('bgColor');
+      } else {
+        navbar.classList.add('bgColor');
+      }
+    }
+
+    window.addEventListener('scroll', scrollValue);
+  }, []);
 
   return <nav className="outline-black">
     <div className="max-w-4xl mx-auto px-4">
@@ -41,7 +58,7 @@ function Navbar() {
 
           {/* Primary nav */}
           <div className="hidden md:flex items-center space-x-1">
-            <div className="space-x-3 space-y-5">
+            <div className="space-x-3 space-y-5 navbar-button">
               <Link href="/get-started">Get Started</Link>
               <Link href="/docs">Documentation</Link>
               <Link href="/pricing">Pricing</Link>
@@ -52,7 +69,7 @@ function Navbar() {
 
         {/* Secondary nav */}
         <div className="hidden md:flex items-center space-x-1">
-          <div className="space-x-3 space-y-5">
+          <div className="space-x-3 space-y-5 navbar-button">
             <Link href="/portal">Portal</Link>
           </div>
         </div>
