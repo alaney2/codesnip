@@ -86,20 +86,20 @@ function Navbar() {
     </div>
 
     <div className="mobile-menu hidden md:hidden">
-      <div className=" text-md">
-        <div className="block px-4 py-2">
+      <div className="text-center pb-6 text-md">
+        <div className="menuLink">
           <Link href="/get-started">Get Started</Link>
         </div>
-        <div className="block px-4 py-2">
+        <div className="menuLink">
           <Link href="/docs">Documentation</Link>
         </div>
-        <div className="block px-4 py-2">
+        <div className="menuLink">
           <Link href="/pricing">Pricing</Link>
         </div>
-        <div className="block px-4 py-2">
+        <div className="menuLink">
           <Link href="/contact">Contact</Link>
         </div>
-        <div className="block px-4 py-2">
+        <div className="menuLink">
           <Link href="/portal">Portal</Link>
         </div>
       </div>
