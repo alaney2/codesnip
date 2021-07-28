@@ -11,7 +11,7 @@
   }
   .oldBgColor {
     transition: all 0.5s;
-    @apply bg-gray-900 border-b-0 border-gray-800 bg-opacity-60 text-gray-400
+    @apply bg-dark-gray border-b-0 border-gray-800 bg-opacity-60 text-gray-400
   }
   .newBgColor {
     transition: all 0.5s;
@@ -30,6 +30,6 @@
     min-height: 450px;
     max-height: 900px;
     height: 65vh;
-    @apply bg-gray-900 pt-80 text-center text-white
+    @apply bg-dark-gray pt-80 text-center text-white
   }
 }
