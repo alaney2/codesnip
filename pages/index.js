@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Navbar from '../components/Navbar'
 import Script from 'next/script';
+import HeroNavbar from '../components/HeroNavBar';
 
 export default function Home() {
   return <div className="bg">
@@ -12,7 +13,7 @@ export default function Home() {
       <link rel="icon" href="/favicon.svg" />
     </Head>
 
-    <Navbar />
+    <HeroNavbar />
 
     <main className="justify-center space-y-40 flex-col">
       <h1 className="hero">Demo here</h1>

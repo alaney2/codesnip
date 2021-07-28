@@ -4,7 +4,7 @@
 
 @layer utilities {
   .navbar-button {
-    @apply text-base 
+    @apply text-base
   }
   .bg {
     @apply min-h-screen h-auto bg-gray-100
@@ -15,7 +15,13 @@
   }
   .newBgColor {
     transition: all 0.5s;
-    @apply bg-white border-b-2 border-gray-200 text-gray-600
+    @apply bg-white border-b-2 border-gray-200 text-gray-500
+  }
+  .link {
+    @apply p-3
+  }
+  .linkHover {
+    @apply hover:text-gray-700 duration-150
   }
   .menuLink {
     @apply block px-4 py-2
