@@ -14,7 +14,7 @@ export default function Home() {
 
     <Navbar />
 
-    <main className="text-center justify-center space-y-64">
+    <main className="justify-center space-y-40 flex-col">
       <h1 className="hero">Demo here</h1>
       {/* <h1 className="text-2xl my-8">
         Coding done right.

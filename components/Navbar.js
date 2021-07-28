@@ -35,24 +35,25 @@ function Navbar() {
     function scrollValue() {
       var navbar = document.getElementById('navbar');
       var scroll = window.scrollY;
-      if (scroll < 200) {
-        navbar.classList.remove('bgColor');
+      if (scroll < document.documentElement.clientHeight * 0.58) {
+        navbar.classList.remove('newBgColor');
+        navbar.classList.add('oldBgColor');
       } else {
-        navbar.classList.add('bgColor');
+        navbar.classList.add('newBgColor');
+        navbar.classList.remove('oldBgColor');
       }
     }
-
     window.addEventListener('scroll', scrollValue);
   }, []);
 
-  return <nav className="fixed w-screen" id="navbar">
+  return <nav className="fixed w-screen text-gray-400" id="navbar">
     <div className="max-w-6xl mx-auto px-4">
       <div className="flex justify-between">
         <div className="flex space-x-4">
           {/* logo */}
           <div className="">
-            <div className="px-2 py-5 text-logo-purple dark:text-lavender tracking-wide font-bold flex items-center text-lg" >
-              <Link href="/">Codesnip</Link>
+            <div className="px-2 py-5 text-logo-pink tracking-wider font-bold flex items-center text-lg" >
+              <Link href="/">CodeSnip</Link>
             </div>
           </div>
 

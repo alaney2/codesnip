@@ -4,30 +4,23 @@
 
 @layer utilities {
   .navbar-button {
-    @apply text-dark-gray text-base dark:text-lavender-light
+    @apply text-base 
   }
   .bg {
-    @apply min-h-screen h-auto bg-almost-white dark:bg-almost-black
+    @apply min-h-screen h-auto bg-gray-100
+  }
+  .oldBgColor {
+    transition: all 0.5s;
+    @apply bg-gray-900 border-b-0 border-gray-800 bg-opacity-60 text-gray-400
+  }
+  .newBgColor {
+    transition: all 0.5s;
+    @apply bg-white border-b-2 border-gray-200 text-gray-600
   }
   .hero {
-    background: #999;
-    @media screen and (min-width: 1020px) {
-      min-height: 450px;
-      max-height: 900px;
-      height: 65vh;
-      margin-top: -50px;
-      padding-top: 50px;
-      margin: 100px;
-      z-index: 11;
-    }
-    position: relative;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  .bgColor {
-    color: black;
-    transition: all 1s;
-    background-color: white;
-    border-bottom: 1px solid lightgray;
+    min-height: 450px;
+    max-height: 900px;
+    height: 65vh;
+    @apply bg-gray-900 pt-80 text-center text-white
   }
 }
