@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/Link';
 import { useEffect } from 'react';
+import { signIn, signOut, useSession } from 'next-auth/client';
 
 function HeroNavbar() {
   // Responsive menu
@@ -59,7 +60,7 @@ function HeroNavbar() {
 
         {/* Secondary nav */}
         <div className="hidden md:flex items-center space-x-1">
-          <div className="link">
+          <div className="link" onClick={signIn}>
             <Link href="/portal">Portal</Link>
           </div>
         </div>
@@ -88,7 +89,7 @@ function HeroNavbar() {
         <div className="menuLink">
           <Link href="/contact">Contact</Link>
         </div>
-        <div className="menuLink">
+        <div className="menuLink" onClick={signIn}>
           <Link href="/portal">Portal</Link>
         </div>
       </div>

@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Navbar from '../components/Navbar'
 import Script from 'next/script';
-import HeroNavbar from '../components/HeroNavBar';
+import HeroNavbar from '../components/HeroNavbar';
 
 export default function Home() {
   return <div className="bg">

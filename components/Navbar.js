@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/Link';
 import { useEffect } from 'react';
+import { signIn, signOut, useSession } from 'next-auth/client';
 
 function Navbar() {
   // Responsive menu
@@ -43,7 +44,7 @@ function Navbar() {
 
         {/* Secondary nav */}
         <div className="hidden md:flex items-center space-x-1">
-          <div className="link linkHover">
+          <div className="link linkHover" onClick={signIn}>
             <Link href="/portal">Portal</Link>
           </div>
         </div>
