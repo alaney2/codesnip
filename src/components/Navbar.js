@@ -4,6 +4,8 @@ import { useEffect } from 'react';
 import { signIn, signOut, useSession } from 'next-auth/client';
 
 function Navbar() {
+  const [session] = useSession();
+
   // Responsive menu
   useEffect(() => {
     const btn = document.querySelector("button.mobile-menu-button");
@@ -44,7 +46,7 @@ function Navbar() {
 
         {/* Secondary nav */}
         <div className="hidden md:flex items-center space-x-1">
-          <div className="link linkHover" onClick={signIn}>
+          <div className="link linkHover" onClick={!session ? signIn : null}>
             <Link href="/portal">Portal</Link>
           </div>
         </div>
@@ -73,7 +75,7 @@ function Navbar() {
         <div className="menuLink">
           <Link href="/contact">Contact</Link>
         </div>
-        <div className="menuLink">
+        <div className="menuLink" onClick={!session ? signIn : null}>
           <Link href="/portal">Portal</Link>
         </div>
       </div>

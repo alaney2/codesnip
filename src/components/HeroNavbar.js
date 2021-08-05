@@ -4,6 +4,8 @@ import { useEffect } from 'react';
 import { signIn, signOut, useSession } from 'next-auth/client';
 
 function HeroNavbar() {
+  const [session] = useSession();
+
   // Responsive menu
   useEffect(() => {
     const btn = document.querySelector("button.mobile-menu-button");
@@ -60,9 +62,10 @@ function HeroNavbar() {
 
         {/* Secondary nav */}
         <div className="hidden md:flex items-center space-x-1">
-          <div className="link" onClick={signIn}>
+          <div className="link" onClick={!session ? signIn : null}>
             <Link href="/portal">Portal</Link>
           </div>
+          <p>{session && session.user.name}</p>
         </div>
 
         <div className="md:hidden flex items-center">
@@ -89,7 +92,7 @@ function HeroNavbar() {
         <div className="menuLink">
           <Link href="/contact">Contact</Link>
         </div>
-        <div className="menuLink" onClick={signIn}>
+        <div className="menuLink" onClick={!session ? signIn : null}>
           <Link href="/portal">Portal</Link>
         </div>
       </div>
