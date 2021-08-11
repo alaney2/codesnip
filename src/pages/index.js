@@ -18,12 +18,12 @@ export default function Home() {
         Coding done right.
       </h1> */}
       <h2>A coding environment for your students.</h2>
-      <p>CodeSnip is designed with educators in mind.</p>
-      <p>CodeSnip is designed with educators in mind.</p>
-      <p>CodeSnip is designed with educators in mind.</p>
-      <p>CodeSnip is designed with educators in mind.</p>
-      <p>CodeSnip is designed with educators in mind.</p>
-      <p>CodeSnip is designed with educators in mind.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat mollitia dolores est nisi sapiente perferendis rem reiciendis aliquam tenetur a veritatis eaque velit, ratione nobis assumenda quisquam dicta placeat maxime..</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat mollitia dolores est nisi sapiente perferendis rem reiciendis aliquam tenetur a veritatis eaque velit, ratione nobis assumenda quisquam dicta placeat maxime..</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat mollitia dolores est nisi sapiente perferendis rem reiciendis aliquam tenetur a veritatis eaque velit, ratione nobis assumenda quisquam dicta placeat maxime..</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat mollitia dolores est nisi sapiente perferendis rem reiciendis aliquam tenetur a veritatis eaque velit, ratione nobis assumenda quisquam dicta placeat maxime..</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat mollitia dolores est nisi sapiente perferendis rem reiciendis aliquam tenetur a veritatis eaque velit, ratione nobis assumenda quisquam dicta placeat maxime..</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat mollitia dolores est nisi sapiente perferendis rem reiciendis aliquam tenetur a veritatis eaque velit, ratione nobis assumenda quisquam dicta placeat maxime..</p>
 
     </main>
 
