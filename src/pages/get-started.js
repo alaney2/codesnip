@@ -1,4 +1,4 @@
-import Navbar from "../components/Navbar";
+import Navbar from "components/Navbar";
 
 function GetStarted() {
   return <div className="bg">

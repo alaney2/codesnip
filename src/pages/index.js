@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import HeroNavbar from '../components/HeroNavbar';
+import HeroNavbar from 'components/HeroNavbar';
 
 export default function Home() {
   return <div className="bg">
